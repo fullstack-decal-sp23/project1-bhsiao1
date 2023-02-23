@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="author" content="Brian Hsiao">
+        <meta name="description" content="Hi! I'm Brian. Welcome.">
+        <link rel="stylesheet" href="styles.css">
+        <title>Brian Hsiao</title>
+    </head>
+    <body>
+        <div id="intro">
+            <h1>Brian Hsiao</h1> 
+            <h2 id="intro-position">Software Engineer</h2>
+            <img src="snoopy.png" alt="Snoopy">
+        </div>
+        <div class="about">
+            <h3>About</h3>
+            <div class="about-facts">
+                <h5 class="fact"> 
+                    Electrical Engineering Computer Science @ UC Berkeley  
+                </h5>
+                <h5 class="fact">
+                    Current Junior Mentor @ Computer Science Mentors
+                </h5>
+                <h5 class="fact">
+                    Listening to music in my apartment and playing basketball at the gym
+                </h5>
+            </div>
+        </div>
+        <div class="work">
+            <h3>Work</h3>
+            <div class="projects">
+                <h5 class="proj"> 
+                    Gitlet: a version control system that mimics basic features of Git by using Java and implementing 15+ of Git functions.
+                </h5>
+                <h5 class="proj">
+                    Ataxx: an Ataxx-style board game with functions for move generation, game state pruning, and AI search that simulated the game space with linearized indices for the tiles.
+                </h5>
+                <h5 class="proj">
+                    Enigma: a simulator for a generalized version of the Enigma encryption machine used in World War II.
+                </h5>
+            </div>
+        </div>
+        <div class="submits">
+            <h4>Message me!</h4>
+            <form>
+                <label for="text">Name</label><br>
+                <input type="text" placeholder="name" name="user_name" required="">
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="email address" name="user_email" required="">
+                <label for="textarea">Your Message</label><br>
+                <textarea name="message" required=""> </textarea>
+                <label for="submit">Submit</label><br>
+                <input type="submit" value="submit">
+                <p id="demo"></p>
+                <script>
+                document.getElementById("demo").innerHTML = "Thanks for your message! I'll try to reach out to you within the next 3 days.";
+                </script> 
+            </form>
+        </div>
+        <div class = "contact">
+            <h4>Contact</h4>
+            <a :hover href="https://www.linkedin.com/in/brianhsiao41/" target="_blank" rel="My LinkedIn Page">LinkedIn</a>
+            <br>
+            <br>
+            <a :hover id = "my-email" href="mailto:brian.hsiao1221@gmail.com">Email me!</a>
+        </div>
+        <div class= "buttons">
+            <button onclick="document.getElementById('clicked').innerHTML = 'You are so cool!'" class="my-button">Click me for fun!</button>
+            <p id="clicked"></p>
+            <h6>© Brian Hsiao 2023</h6>
+        </div>
+    </body>
+    </html>
